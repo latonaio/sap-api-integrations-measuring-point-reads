@@ -62,6 +62,7 @@ accepter において 下記の例のように、データの種別（＝APIの�
 	"measuring_point_code": "1",
 	"deleted": false
 ```
+
 ## 指定されたデータ種別のコール
 
 accepter における データ種別 の指定に基づいて SAP_API_Caller 内の caller.go で API がコールされます。  
@@ -96,7 +97,7 @@ func (c *SAPAPICaller) AsyncGetMeasuringPoint(measuringPoint, equipment string, 
 
 SAP API Business Hub における API サービス のうちの 殆どの API サービス のBASE URLのフォーマットは、"API_(リポジトリ名)_SRV" であり、殆どの API サービス 間 の データレイアウトは統一されています。   
 従って、Latona および AION における リソースにおいても、データレイアウトが統一されています。    
-一方、本レポジトリ に関わる API である Planned Order のサービスは、BASE URLのフォーマットが他のAPIサービスと異なります。      
+一方、本レポジトリ に関わる API である Measuring Point のサービスは、BASE URLのフォーマットが他のAPIサービスと異なります。      
 その結果、本レポジトリ内の一部のAPIのデータレイアウトが、他のAPIサービスのものと異なっています。  
 
 #### BASE URLが "API_(リポジトリ名)_SRV" のフォーマットである API サービス の データレイアウト（=responses）  
@@ -140,7 +141,7 @@ type ToProductionOrderItem struct {
 ```
 
 #### BASE URL が "api_measuringpoint/srvd_a2x/sap/measuringpoint/0001" である Measuring Point の APIサービス の データレイアウト（=responses）  
-BASE URL が "api_measuringpoint/srvd_a2x/sap/measuringpoint/0001" である Planned Order の APIサービス の データレイアウト（=responses）は、例えば、次の通りです。  
+BASE URL が "api_measuringpoint/srvd_a2x/sap/measuringpoint/0001" である Measuring Point の APIサービス の データレイアウト（=responses）は、例えば、次の通りです。  
 
 ```
 type Header struct {
