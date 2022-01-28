@@ -184,13 +184,13 @@ type Header struct {
 このように、BASE URLが "API_(リポジトリ名)_SRV" のフォーマットである API サービス の データレイアウトと、 Measuring Point の データレイアウトは、D、Results、Metadata、Value の配列構造を持っているか持っていないかという点が異なります。  
 
 ## Output  
-本マイクロサービスでは、[golang-logging-library](https://github.com/latonaio/golang-logging-library) により、以下のようなデータがJSON形式で出力されます。  
+本マイクロサービスでは、[golang-logging-library-for-sap](https://github.com/latonaio/golang-logging-library-for-sap) により、以下のようなデータがJSON形式で出力されます。  
 以下の sample.json の例は、SAP 計測点 の ヘッダデータ が取得された結果の JSON の例です。  
-以下の項目のうち、"MeasuringPoint" ～ "MsmtRdngTransferMode" は、/SAP_API_Output_Formatter/type.go 内 の Type Header {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
+以下の項目のうち、"MeasuringPoint" ～ "MsmtRdngTransferMode" は、/SAP_API_Output_Formatter/type.go 内 の Type Header {} による出力結果です。"cursor" ～ "time"は、golang-logging-library-for-sap による 定型フォーマットの出力結果です。  
 
 ```
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-measuring-point-reads/SAP_API_Caller/caller.go#L63",
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-measuring-point-reads/SAP_API_Caller/caller.go#L58",
 	"function": "sap-api-integrations-measuring-point-reads/SAP_API_Caller.(*SAPAPICaller).Header",
 	"level": "INFO",
 	"message": [
@@ -227,6 +227,6 @@ type Header struct {
 			"MsmtRdngTransferMode": ""
 		}
 	],
-	"time": "2022-01-06T12:01:34.928843+09:00"
+	"time": "2022-01-28T18:02:27+09:00"
 }
 ```

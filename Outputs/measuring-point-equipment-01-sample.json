@@ -1,5 +1,5 @@
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-measuring-point-reads/SAP_API_Caller/caller.go#L129",
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-measuring-point-reads/SAP_API_Caller/caller.go#L91",
 	"function": "sap-api-integrations-measuring-point-reads/SAP_API_Caller.(*SAPAPICaller).Equipment",
 	"level": "INFO",
 	"message": [
@@ -100,5 +100,5 @@
 			"MsmtRdngTransferMode": ""
 		}
 	],
-	"time": "2022-01-06T12:50:03.456425+09:00"
+	"time": "2022-01-28T18:03:13+09:00"
 }
